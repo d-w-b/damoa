@@ -1,0 +1,142 @@
+.loginWrapper{
+  background : #e3f2ff;
+}
+
+.loginwindow {
+  display: flex;
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.logincontainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 1000px;
+  height: 100%;
+  flex-grow: 1;
+  position: relative;
+  height: 100%;
+}
+
+.login,
+.signUp,
+.findpassword {
+  text-align: center;
+  height: 90%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginicon img {
+  width: 100px;
+  height: 100px;
+}
+
+/* h2 {
+  margin: 0 0 20px 0;
+} */
+
+.login-form {
+  margin-top: 20px;
+}
+
+.text-input {
+  padding: 0px 10px;
+  width: 200px;
+  height: 35px;
+  margin: 1px;
+  color: black;
+  /* border: 1px solid #0048ff; */
+}
+
+.btn-login {
+  padding: 3px;
+  width: 224px;
+  height: 35px;
+  margin: 20px;
+  color: #000;
+  background: #fff;
+  border: 1px solid #00000040;
+  /* border: 1px solid #0048ff; */
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-login:hover{
+  background: white;
+}
+
+.loginsignup-form {
+  display: flex;
+  justify-content: center;
+}
+
+.loginsignup-form button {
+  padding: 2px 0px 0px 0px;
+  width: 95px;
+  height: 25px;
+  margin: 20px 5px 0px 5px;
+  color: #000;
+  cursor: pointer;
+  font-size: 12px;
+  background: transparent;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  border-bottom: 1px solid #000;
+}
+
+.loginsignup-form button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #000;
+}
+
+.loginsignup-form button:active {
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+}
+
+.signup-form {
+  margin-top: 20px;
+}
+
+.signup-form button {
+  padding: 3px;
+  width: 220px;
+  height: 35px;
+  margin: 20px;
+  color: #000;
+  background: #fff;
+  border: 1px solid #00000040;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.findpassword-form {
+  margin-top: 20px;
+}
+
+.findpassword-form button {
+  padding: 3px;
+  width: 220px;
+  height: 35px;
+  margin: 20px;
+  color: #000;
+  background: #fff;
+  border: 1px solid #00000040;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.custom-button:active {
+  background: rgba(255, 255, 255, 0.3);
+}

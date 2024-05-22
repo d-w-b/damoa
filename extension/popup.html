@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body data-theme="light-mode">
+    <div class="loginwindow">
+        <ul class="loginWrapper">
+            <li class="login">
+                <div>
+                    <div class="loginicon">
+                        <img src="icons/popcorn2.png" alt="Popcorn Icon">
+                    </div>
+                    <h2>다모아</h2>
+                </div>
+                <div class="login-form">
+                    <p><input class="text-input" placeholder="Id"></p>
+                    <p><input class="text-input" id="password" placeholder="Password" type="password"></p>
+                    <button class="btn-login">로그인</button>
+                    <div class="loginsignup-form">
+                        <button class="tosignupbutton">회원가입</button>
+                        <button class="tofindpasswordbutton">비밀번호 찾기</button>
+                    </div>
+                </div>
+            </li>
+            <li class="signUp">
+                <div>
+                    <div class="loginicon">
+                        <img src="icons/popcorn2.png" alt="Popcorn Icon">
+                    </div>
+                    <h2>다모아</h2>
+                </div>
+                <div class="signup-form">
+                    <p><input class="text-input" placeholder="Id"></p>
+                    <p><input type="password" class="text-input" placeholder="Password"></p>
+                    <button class="signupbutton">회원가입</button>
+                </div>
+            </li>
+            <li class="findpassword">
+                <div>
+                    <div class="loginicon">
+                        <img src="icons/popcorn2.png" alt="Popcorn Icon">
+                    </div>
+                    <h2>다모아</h2>
+                </div>
+                <div class="findpassword-form">
+                    <p><input class="text-input" placeholder="Name"></p>
+                    <p><input class="text-input" placeholder="ID"></p>
+                    <button class="signupbutton">비밀번호 찾기</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="window">
+        <ul class="container">
+            <li class="main">
+                <div>
+                    <div class="title">
+                        <img src="icons/popcorn2.png" alt="popcorn Icon"
+                            style="width: 50px; height: 50px; margin: 0px 8px 0px 5px; position:relative; top:17px;">
+                        <h2 class='memberid'></h2>
+                    </div>
+
+                    <div class="icon-container">
+                        <button id="searchBtn" class="my-icon-btn">
+                            <img src="icons/search_black.png" class='btnsearchImg' alt="Search Icon">
+                        </button>
+                        <button id="myPageBtn" class="btn-tab" style="width: 30px; height: 30px;">
+                            <img src="icons/mypage_black.png" class='btnmypageImg' alt="My Page Icon"
+                                style="width: 100%; height: 100%;">
+                        </button>
+                    </div>
+                    <div class="contents-container">
+                        <!-- <div class="user-stat">
+                            <h2 class="userid">기진석</h2>
+                            <svg id="pie" width="200px" height="200px"></svg>
+                            <div class="genre-stat"></div>
+                        </div> -->
+                    </div>
+                </div>
+            </li>
+
+            <li class="main">
+                <div class="title">
+                    <img src="icons/popcorn2.png" alt="popcorn Icon"
+                        style="width: 50px; height: 50px; margin: 0px 8px 0px 5px;">
+                </div>
+                <div class=empty>
+                    <div class="button-container">
+                        <button class="prev">
+                            마이페이지 </button>
+                    </div>
+                    <div class="mypage">
+                        <button class='darkmode__btn'>다크모드</button>
+                        <button class='help'>도움말</button>
+                        <button class="logout">로그아웃</button>
+                    </div>
+                </div>
+            </li>
+
+            <li class="main">
+                <div class="title">
+                    <img src="icons/popcorn2.png" alt="popcorn Icon"
+                        style="width: 50px; height: 50px; margin: 0px 8px 0px 5px;">
+
+                </div>
+                <div class=empty>
+                    <div class="button-container">
+                        <button class="prev">
+                            < 찜한 OTT</button>
+                    </div>
+                    <div class="ottpage contentpage">
+                    </div>
+                    <button id="addOttCategoryBtn" class="categoryaddBtn">
+                        <img src="icons/plus_black.png" class="categoryplusImg" alt="Add Ott Category">
+                    </button>
+                </div>
+            </li>
+
+            <li class="main">
+                <div class="title">
+                    <img src="icons/popcorn2.png" alt="popcorn Icon"
+                        style="width: 50px; height: 50px; margin: 0px 8px 0px 5px;">
+
+                </div>
+                <div class=empty>
+                    <div class="button-container">
+                        <button class="prev">
+                            < 찜한 채널</button>
+                    </div>
+                    <div class="channelpage contentpage">
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="main">
+                <div class="title">
+                    <img src="icons/popcorn2.png" alt="popcorn Icon"
+                        style="width: 50px; height: 50px; margin: 0px 8px 0px 5px;">
+
+                </div>
+                <div class=empty>
+                    <div class="button-container">
+                        <button class="prev">
+                            < 찜한 유튜브</button>
+                    </div>
+                    <div class="youvidpage contentpage">
+                    </div>
+                    <button id="addYouvidCategoryBtn" class="categoryaddBtn">
+                        <img src="icons/plus_black.png" class="categoryplusImg" alt="Add YouTube Category">
+                    </button>
+                </div>
+            </li>
+
+            <li class="main">
+                <div class="title">
+                    <img src="icons/popcorn2.png" alt="popcorn Icon"
+                        style="width: 50px; height: 50px; margin: 0px 8px 0px 5px;">
+
+                </div>
+                <div class=empty>
+                    <div class="button-container">
+                        <button class="prev">
+                            < 찜한 스트리머</button>
+                    </div>
+                    <div class="streamerpage contentpage">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="popupwindow/popcorn.js"></script>
+    <script src="popupwindow/init.js"></script>
+    <script src="contentscripts/common.js"></script>
+    <script src="popupwindow/category.js"></script>
+    <script src="popupwindow/tabHandler.js"></script>
+    <script src="popupwindow/slide.js"></script>
+</body>
+
+</html>
